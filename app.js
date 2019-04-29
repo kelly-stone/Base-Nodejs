@@ -1,3 +1,5 @@
-var counter = require("./count");
+var all = require("./count");
 
-console.log(counter(["ruby", "nodejs", "react"]));
+console.log(all.counter(["ruby", "nodejs", "react"]));
+console.log(all.adder(2, 3));
+console.log(all.pi);
