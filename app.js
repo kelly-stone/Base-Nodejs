@@ -24,4 +24,14 @@
 //console.log(__dirname); //shows location
 //console.log(__filename); //shows file location
 
-//more.. require export
+// function callFunction(fun, name) {
+//   fun(name);
+// }
+// var sayBye = function(name) {
+//   console.log("Bye " + name);
+// };
+// callFunction(sayBye, "Kelly");
+
+// callFunction(function(name) {
+//     console.log("Bye " + name);
+//     }, "Kelly")
