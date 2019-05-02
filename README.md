@@ -9,3 +9,9 @@ require and exports;
 EventEmitter;
 
 fs.readFile/writeFile/unlink/mkdir/rmdir sync;
+
+Stream:
+createReadStream,
+createWriteStream,
+.write(),
+.pipe();
