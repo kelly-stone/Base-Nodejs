@@ -1,18 +1,30 @@
+// var http = require("http");
+
+// var onRequest = function(request, response) {
+//   console.log("Request received");
+//   response.writeHead(200, { "Content-Type": "application/json" });
+//   // response.write('Hello from out application');
+//   var myObj = {
+//     name: "kelly",
+//     job: "programmer"
+//   };
+//   response.end(JSON.stringify(myObj));
+// };
+
+// var server = http.createServer(onRequest);
+
 var http = require("http");
+var fs = require("fs");
 
 var onRequest = function(request, response) {
   console.log("Request received");
-  response.writeHead(200, { "Content-Type": "application/json" });
+  response.writeHead(200, { "Content-Type": "text/html" });
+  var myReadStream = fs.createReadStream(__dirname + "/index.html", "utf8");
   // response.write('Hello from out application');
-  var myObj = {
-    name: "kelly",
-    job: "programmer",
-    age: 27
-  };
-  response.end(JSON.stringify(myObj));
+  myReadStream.pipe(response);
 };
 
 var server = http.createServer(onRequest);
 
-server.listen(8000);
-console.log("Server started on localhost port 8000");
+server.listen(3000);
+console.log("Server started on localhost port 3000");
