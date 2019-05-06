@@ -18,8 +18,8 @@ var fs = require("fs");
 
 function startServer(route, handle) {
   var onRequest = function(request, response) {
-    console.log("request received" + request.url);
-    route(handle, request.url);
+    console.log("request received " + request.url);
+    route(handle, request.url, response);
     // if (request.url === "/" || request.url === "/home") {
     //   response.writeHead(200, { "Content-Type": "text/html" });
     //   var myReadStream = fs.createReadStream(__dirname + "/index.html", "utf8");
@@ -47,7 +47,7 @@ function startServer(route, handle) {
 
   var server = http.createServer(onRequest);
 
-  server.listen(9000);
+  server.listen(1000);
   console.log("Server started on localhost port 5000");
 }
 
