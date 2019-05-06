@@ -47,7 +47,7 @@ function startServer(route, handle) {
 
   var server = http.createServer(onRequest);
 
-  server.listen(1000);
+  server.listen(4000);
   console.log("Server started on localhost port 5000");
 }
 

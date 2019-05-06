@@ -6,7 +6,8 @@ function route(handle, pathname, response) {
     // app1.js
     handle[pathname](response);
   } else {
-    console.log("no handler for " + pathname);
+    response.writeHead(404, { "Content-Type": "text/html" });
+    fs.createReadStream(__dirname + "/404.html", "utf8").pipe(response);
   }
 }
 
