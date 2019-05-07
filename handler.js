@@ -14,13 +14,11 @@ function review(response) {
   // response.write('Hello from out application');
   myReadStream.pipe(response);
 }
-function api_records(response) {
+function api_records(response, params) {
   console.log("executing api_records handler");
   response.writeHead(200, { "Content-Type": "application/json" });
-  var jsonObj = {
-    name: "kelly"
-  };
-  response.end(JSON.stringify(jsonObj));
+
+  response.end(JSON.stringify(params));
 }
 
 module.exports = {

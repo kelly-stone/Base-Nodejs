@@ -21,7 +21,8 @@ function startServer(route, handle) {
   var onRequest = function(request, response) {
     var pathname = url.parse(request.url).pathname;
     console.log("request received " + pathname);
-    route(handle, pathname, response);
+    var params = url.parse(request.url, true).query;
+    route(handle, pathname, response, params);
     // if (request.url === "/" || request.url === "/home") {
     //   response.writeHead(200, { "Content-Type": "text/html" });
     //   var myReadStream = fs.createReadStream(__dirname + "/index.html", "utf8");
@@ -49,7 +50,7 @@ function startServer(route, handle) {
 
   var server = http.createServer(onRequest);
 
-  server.listen(7000);
+  server.listen(8000);
   console.log("Server started on localhost port 5000");
 }
 
