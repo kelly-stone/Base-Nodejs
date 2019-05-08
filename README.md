@@ -6,7 +6,7 @@ callback function;
 
 require and exports;
 
-EventEmitter;
+EventEmitter(events, util);
 
 fs.readFile/writeFile/unlink/mkdir/rmdir sync;
 
@@ -17,3 +17,5 @@ createWriteStream,
 .pipe();
 
 Web server;
+Using module http, fs, url, querystring.
+GET, POST.
