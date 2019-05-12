@@ -22,3 +22,4 @@ GET, POST.
 
 $npm install express;
 $npm install -g webpack;
+\$npm install -g nodemon;
