@@ -1,4 +1,4 @@
-Review Base node js
+Review Base node js:
 
 https://nodejs.org/en/
 
@@ -18,8 +18,10 @@ createWriteStream,
 
 Web server;
 Using module http, fs, url, querystring.
-GET, POST.
+Using GET, POST.
 
-$npm install express;
-$npm install -g webpack;
+\$npm install express;
+
+\$npm install -g webpack;
+
 \$npm install -g nodemon;
