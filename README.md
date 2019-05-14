@@ -17,9 +17,11 @@ Stream:
 > .write(),
 > .pipe();
 
-*Web server;
-*Using module http, fs, url, querystring.
-\*Using GET, POST.
+_
+-Web server;
+-Using module http, fs, url, querystring.
+-Using GET, POST.
+_
 
 ```
 $npm install express;
