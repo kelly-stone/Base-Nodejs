@@ -1,6 +1,6 @@
-Review Base node js:
+**Review Base node js:**
 
-https://nodejs.org/en/
+[Node.js Page](https://nodejs.org/en/)
 
 callback function;
 
@@ -11,17 +11,20 @@ EventEmitter(events, util);
 fs.readFile/writeFile/unlink/mkdir/rmdir sync;
 
 Stream:
-createReadStream,
-createWriteStream,
-.write(),
-.pipe();
 
-Web server;
-Using module http, fs, url, querystring.
-Using GET, POST.
+> createReadStream,
+> createWriteStream,
+> .write(),
+> .pipe();
 
-\$npm install express;
+-Web server;
+-Using module http, fs, url, querystring.
+-Using GET, POST.
 
-\$npm install -g webpack;
+```
+$npm install express;
 
-\$npm install -g nodemon;
+$npm install -g webpack;
+
+$npm install -g nodemon;
+```
